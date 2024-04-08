@@ -1,0 +1,43 @@
+.container {
+    background-color: #383838;
+    height: 5rem;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+}
+
+.logo {
+    width: 7%;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    a:hover {
+        color: #00ADD3;
+    }
+
+    .appButton {
+        background-color: #00ADD3;
+        color: white;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 1.2rem;
+        cursor: pointer;
+        font-size: 1rem;
+        color:rgb(20, 20, 53);
+        font-weight: 600;
+    }
+}

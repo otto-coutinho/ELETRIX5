@@ -1,0 +1,16 @@
+// blue: #00ADD3;
+// grey: #2A2B2D;
+
+ .container {
+    background-color: #2A2B2D;
+    height: 45rem;
+    color: white;
+ }
+
+ .banner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 2rem;
+      height: 100%;
+ }

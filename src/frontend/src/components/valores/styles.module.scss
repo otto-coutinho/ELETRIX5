@@ -1,0 +1,40 @@
+.container {
+    height: 20rem;
+    background-color: #2A2B2D;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+}
+
+.division {
+   display: flex;
+   align-items: baseline;
+}
+
+.title {
+    font-size: 1rem;
+    
+    h1 {
+        font-weight: 400;
+        margin: 0.8rem 0;
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+}
+
+.hightlight {
+    color: #00ADD3;
+}
