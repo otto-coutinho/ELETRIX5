@@ -3,7 +3,7 @@
     background-color: #2A2B2D;
     display: flex;
     flex-direction: column;
-   justify-content: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -13,11 +13,6 @@
     align-items: center;
     gap: 5rem;
     width: 100%;
-}
-
-.division {
-   display: flex;
-   align-items: baseline;
 }
 
 .title {
@@ -35,6 +30,33 @@
     width: 30rem;
 }
 
-.hightlight {
+.highlight {
     color: #00ADD3;
+}
+
+/* Para dispositivos com largura de tela até 600px */
+@media (max-width: 600px) {
+    .container {
+        /* estilos para o container em telas pequenas */
+    }
+
+    .content {
+        /* estilos para o content em telas pequenas */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .title {
+        /* estilos para o title em telas pequenas */
+        h1 {
+            font-size: 0.8rem;
+        }
+    }
+
+    .text {
+        /* estilos para o text em telas pequenas */
+        width: 100%;
+        padding: 0 1rem;
+    }
 }

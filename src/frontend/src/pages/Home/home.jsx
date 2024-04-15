@@ -6,6 +6,7 @@ import Banner from "../../components/banner/banner";
 import Navbar from "../../components/navbar/navbar";
 import Valores from "../../components/valores/valores";
 import Produtos from "../../components/produtos/produtos";
+import Servicos from "../../components/servicos/servicos";
 
 // Divider
 import Divider from "../../components/divider/divider";
@@ -19,6 +20,7 @@ function Home () {
             <Divider></Divider>
             <Produtos></Produtos>
             <Divider></Divider>
+            <Servicos></Servicos>
         </div>
     );
 };

@@ -1,6 +1,27 @@
+.container {
+    /* estilos para o container */
+}
+
 .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* estilos para o content */
+}
+
+.divisor {
     width: 100%;
+    height: auto;
+}
+
+/* Para dispositivos com largura de tela até 600px */
+@media (max-width: 600px) {
+    .container {
+        /* estilos para o container em telas pequenas */
+    }
+
+    .content {
+        /* estilos para o content em telas pequenas */
+    }
+
+    .divisor {
+        /* estilos para o divisor em telas pequenas */
+    }
 }

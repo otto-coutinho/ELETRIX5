@@ -1,24 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./styles.module.scss";
 
 // assets
 import Logo from "../../assets/logo-icon.svg";
 
 function Navbar () {
+    const [navbarStyle, setNavbarStyle] = useState(styles.transparent);
 
     const handleScroll = () => {
-        const navbar = document.querySelector(`.${styles.container}`);
         if (window.scrollY > 0) {
-            navbar.classList.add(styles.scrolled);
+            setNavbarStyle(styles.scrolled);
         } else {
-            navbar.classList.remove(styles.scrolled);
+            setNavbarStyle(styles.transparent);
         }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} ${navbarStyle}`}>
             <img className={styles.logo} src={Logo} alt="Logo" />
             <div className={styles.links}>
                 <a href="/">Home</a>

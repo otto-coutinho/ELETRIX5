@@ -1,32 +1,27 @@
 import React from "react";
-import styles from "./styles.module.scss";
+import styles from './styles.module.scss';
 
 // assets
-import Charger from "../../assets/estacao-recarga.svg";
+import ChargerImage from "../../assets/estacao-recarga.svg";
 
-function Produtos () {
+function Produto() {
     return (
         <div className={styles.container}>
-            <div className={styles.title}>
-                <h1>Produto</h1>
-            </div>
+            <h1 className={styles.title}>Produto</h1>
             <div className={styles.content}>
                 <div className={styles.text}>
-                    <h1>VENDA DE CARREGADOR</h1>
+                    <h2>Venda de carregador</h2>
                     <p>
-                    Adquira já seu carregador confiável de  3,6kW, 7kW, 11kW e 22kW: segurança e
-                    durabilidade para seu veículo. Escolha a qualidade que faz a diferença.
+                    Adquira já seu carregador confiável de 3,6kW, 7kW, 11kW e 22kW: segurança e durabilidade para seu veículo. Escolha a qualidade que faz a diferença.
                     </p>
-                    <p>
-                        Se interessou? Entre em contato <a href="">aqui</a>
-                    </p>
+                    <p>Se interessou? Entre em contato <a href="#">aqui</a></p>
                 </div>
                 <div className={styles.image}>
-                    <img className={styles.picture} src={Charger} alt="Carregador" />
+                    <img src={ChargerImage} alt="Carregador" />
                 </div>
             </div>
         </div>
     );
-};
+}
 
-export default Produtos;
+export default Produto;

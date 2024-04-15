@@ -1,16 +1,43 @@
-// blue: #00ADD3;
-// grey: #2A2B2D;
+.container {
+   position: relative;
+}
 
- .container {
-    background-color: #2A2B2D;
-    height: 45rem;
-    color: white;
- }
+.banner {
+   width: 100%;
+   height: auto;
+}
 
- .banner {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 2rem;
-      height: 100%;
- }
+.content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.title {
+   /* estilos para o título */
+}
+
+.subtitle {
+   /* estilos para o subtítulo */
+}
+
+.button {
+   /* estilos para o botão */
+}
+
+/* Para dispositivos com largura de tela até 600px */
+@media (max-width: 600px) {
+   .title {
+       /* estilos para o título em telas pequenas */
+   }
+
+   .subtitle {
+       /* estilos para o subtítulo em telas pequenas */
+   }
+
+   .button {
+       /* estilos para o botão em telas pequenas */
+   }
+}
