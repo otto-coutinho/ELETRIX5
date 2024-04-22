@@ -13,10 +13,30 @@
    left: 50%;
    transform: translate(-50%, -50%);
    text-align: center;
-}
 
-.title {
-   /* estilos para o título */
+   img {
+         width: 20rem;
+         height: auto;
+         margin-bottom: 1rem;
+   }
+
+   h2 {
+         font-size: 2.3rem;
+         font-weight: 300;
+         color: #fff;
+         margin-bottom: 1rem;
+   }
+
+   button {
+         background-color: #00ADD3;
+         color: #001339;
+         font-weight: 500;
+         padding: 0.8rem 1rem;
+         border: none;
+         border-radius: 1.2rem;
+         cursor: pointer;
+   
+   }
 }
 
 .subtitle {

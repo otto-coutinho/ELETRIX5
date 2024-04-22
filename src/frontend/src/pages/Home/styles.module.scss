@@ -1,7 +1,11 @@
 .global {
     font-family: 'Work Sans', sans-serif;
     color: white;
-    background-color: #2A2B2D;
+    background-color: #181818;
+    background:
+                radial-gradient(circle at 10% 20%, rgba(0, 0, 29, 0.946), rgba(0, 21, 52, 0.433)),
+                radial-gradient(circle at 70% 50%, rgba(0, 213, 255, 0.882), rgb(0, 0, 88)),
+                radial-gradient(circle at 90% 80%, rgba(19, 219, 219, 0.5), rgb(0, 0, 0)),
 }
 
 * {
@@ -10,3 +14,35 @@
     box-sizing: border-box;
   }
   
+  /* For Webkit browsers */
+::-webkit-scrollbar {
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #449fc0;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3c93b3;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: 1000;
+
+    img {
+        width: 4rem;
+        height: 4rem;
+        object-fit: cover;
+    }
+}

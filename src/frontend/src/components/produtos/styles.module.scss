@@ -6,17 +6,24 @@
 
     .title {
         margin-bottom: 2rem;
+        color: #00ADD3;
+        font-weight: 300;
+        margin-top: 0.4rem;
     }
 
     .content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 55rem;
 
         .text {
             flex: 1;
             margin-right: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
         }
 
         .image {
@@ -29,15 +36,21 @@
 }
 
 /* For devices with screen width up to 600px */
-@media (max-width: 600px) {
+@media (max-width: 740px) {
     .container {
         .content {
+            display: flex;
             flex-direction: column;
+            width: 100%;
+            align-items: center;
         }
 
         .text, .image {
-            margin: 0;
+            margin: 1rem;
             width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

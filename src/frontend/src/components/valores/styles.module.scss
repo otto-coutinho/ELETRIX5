@@ -1,6 +1,5 @@
 .container {
     height: 20rem;
-    background-color: #2A2B2D;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +34,7 @@
 }
 
 /* Para dispositivos com largura de tela até 600px */
-@media (max-width: 600px) {
+@media (max-width: 740px) {
     .container {
         /* estilos para o container em telas pequenas */
     }
@@ -43,14 +42,19 @@
     .content {
         /* estilos para o content em telas pequenas */
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1rem;
     }
 
     .title {
-        /* estilos para o title em telas pequenas */
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
         h1 {
-            font-size: 0.8rem;
+            font-size: 1rem;
         }
     }
 
