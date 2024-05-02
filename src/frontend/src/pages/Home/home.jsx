@@ -13,6 +13,8 @@ import Servicos from "../../components/servicos/servicos";
 import Formulario from "../../components/sugerir/sugerir";
 import Vantagens from "../../components/vantagens/vantagens";
 import Parceiros from "../../components/parceiros/parceiros";
+import Perguntas from "../../components/perguntas/perguntas";
+import Contato from "../../components/contato/contato";
 
 // Divider
 import Divider from "../../components/divider/divider";
@@ -33,6 +35,11 @@ function Home () {
             <Vantagens></Vantagens>
             <Divider></Divider>
             <Parceiros></Parceiros>
+            <Divider></Divider>
+            <Perguntas></Perguntas>
+            <Divider></Divider>
+            <Contato></Contato>
+            <Divider></Divider>
         </div>
     );
 };

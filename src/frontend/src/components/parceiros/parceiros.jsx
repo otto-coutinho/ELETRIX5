@@ -13,7 +13,7 @@ import Parceiro_quatro from "../../assets/partner-4.svg";
 function Carrossel() {
     return (
         <div className="carrossel">
-            <h1>Parceiros</h1>
+            <h1>Conheça quem nos apoia</h1>
             <div className="swip">
             <Swiper spaceBetween={20}
                 slidesPerView={3}

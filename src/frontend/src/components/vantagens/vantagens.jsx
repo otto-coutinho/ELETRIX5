@@ -5,6 +5,10 @@ function Vantagens() {
     return (
         <div className="vantagens">
             <h1>Vantagens de ser um parceiro</h1>
+            <div className="content">
+                <h2>O que é ser um parceiro?</h2>
+                <p>Ser parceiro conosco é primordialmente integrar nossa solução EletrixHub. Isso pode envolver desde indicar um local até disponibilizar um espaço para a instalação de um ponto de carregamento.</p>
+            </div>
             <div className="boxes">
                 <div className="box">
                     <h2>Destaque</h2>
