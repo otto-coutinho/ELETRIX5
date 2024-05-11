@@ -1,0 +1,171 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 65px;
+    background-color: #242628;
+    color: #fff;
+}
+
+.eletrix,
+.container2,
+.app {
+    flex: 0 1 calc(33.33% - 20px); 
+    margin-bottom: 20px;
+}
+
+.eletrix .social {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.contato .WhatsApp,
+.contato .Email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.contato .WhatsApp img,
+.contato .Email img {
+    width: 30px;
+    height: 30px;
+}
+
+.contato .WhatsApp div,
+.contato .Email div {
+    display: flex;
+    flex-direction: column;
+}
+
+.eletrix .social p {
+    margin-right: 10px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.eletrix {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    height: 100%; 
+}
+
+.eletrix p {
+    font-size: 1.5em;
+    padding-top: 40px;
+}
+
+.eletrixLogo {
+    width: 14.06em;
+    height: auto;
+}
+
+.whatslogo {
+    width: 30px;
+    height: 30px;
+
+}
+
+.emaillogo {
+    width: 30px;
+    height: 30px;
+}
+
+.navegue h1 {
+    font-size: 1.5em;
+    color: #00ADD3;
+    padding-bottom: 40px;
+}
+
+.navegue {
+    padding-right: 150px;
+}
+
+.navegue ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navegue li {
+    margin-bottom: 10px;
+}
+
+.contato h1 {
+    font-size: 1.5em;
+    color: #00ADD3;
+    padding-bottom: 40px;
+}
+
+.contato p {
+    margin-bottom: 10px;
+}
+
+.contato img {
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.app h1 {
+    padding-bottom: 60px;
+    font-size: 1.5em;
+    text-align: center;
+    color: #00ADD3;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagesapp{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.playlogo{
+    width: 200px;
+    height: 60px;
+}
+
+.applogo{
+    width: 200px;
+    height: 60px;
+
+}
+
+.app img {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .eletrix,
+    .container2,
+    .app {
+        flex-basis: 100%;
+        gap: 0px;
+        padding-bottom: 20px;
+    }
+    .contato {
+        padding-top: 40px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navegue {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-left: 50px;
+    }
+    .contato img {
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+}

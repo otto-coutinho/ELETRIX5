@@ -15,6 +15,7 @@ import Vantagens from "../../components/vantagens/vantagens";
 import Parceiros from "../../components/parceiros/parceiros";
 import Perguntas from "../../components/perguntas/perguntas";
 import Contato from "../../components/contato/contato";
+import Footer from "../../components/footer/footer";
 
 // Divider
 import Divider from "../../components/divider/divider";
@@ -40,6 +41,7 @@ function Home () {
             <Divider></Divider>
             <Contato></Contato>
             <Divider></Divider>
+            <Footer></Footer>
         </div>
     );
 };
