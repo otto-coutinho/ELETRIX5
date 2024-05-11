@@ -16,6 +16,7 @@ import Parceiros from "../../components/parceiros/parceiros";
 import Perguntas from "../../components/perguntas/perguntas";
 import Contato from "../../components/contato/contato";
 import Footer from "../../components/footer/footer";
+import NossoApp from "../../components/nosso-app/app";
 
 // Divider
 import Divider from "../../components/divider/divider";
@@ -38,6 +39,8 @@ function Home () {
             <Parceiros></Parceiros>
             <Divider></Divider>
             <Perguntas></Perguntas>
+            <Divider></Divider>
+            <NossoApp></NossoApp>
             <Divider></Divider>
             <Contato></Contato>
             <Divider></Divider>

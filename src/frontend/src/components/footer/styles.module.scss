@@ -143,6 +143,28 @@
     margin: 0 5px;
 }
 
+.licenca{
+    display: flex;
+    background-color: #1D1E20;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.politicas {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.reservados{
+    padding-right: 200px;
+}
+
 @media (max-width: 768px) {
     .eletrix,
     .container2,
@@ -167,5 +189,8 @@
     .contato img {
         margin-right: 10px;
         margin-bottom: 50px;
+    }
+    .politicas {
+        display: none;
     }
 }
