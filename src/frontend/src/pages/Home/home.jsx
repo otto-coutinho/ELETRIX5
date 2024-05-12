@@ -43,7 +43,6 @@ function Home () {
             <NossoApp></NossoApp>
             <Divider></Divider>
             <Contato></Contato>
-            <Divider></Divider>
             <Footer></Footer>
         </div>
     );
