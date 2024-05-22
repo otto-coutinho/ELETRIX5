@@ -1,35 +1,35 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import IphoneLeft from "../../assets/iPhone-Left.svg";
-import IphoneRight from "../../assets/Iphone-Right.png";
-
+import Iphoneum from "../../assets/iPhoneum.svg";
+import Iphonedois from "../../assets/iPhonedois.svg";
+import Iphonetres from "../../assets/iPhonetres.svg";
 import Divisor from "../../assets/divisor.svg";
 
-function NossoApp () {
+function NossoApp() {
     return (
-        <div className={styles.container}>
-            <h1 className={styles.nosso}>NOSSO APP</h1>
-            <div className={styles.iphones}>
-                <h1 className={styles.slogan}>Simples, Prático e Fácil.</h1>
-                <div className={styles.iphone1}>
-                    <h1 className={styles.iphlabe}>Encontre postos de carregamento ELETRIX próximos rapidamente!</h1>
-                    <img src={IphoneRight} alt="Divisor" className={styles.IphoneRight}/>
-                </div>
-                <div className={styles.iphone2}>
-                    <img src={IphoneLeft} alt="Divisor" className={styles.Iphoneleft}/>
-                </div>
-                <div className={styles.iphone3}>
-                    <div className={styles.labelfim}>
-                        <h1 className={styles.iphlabe3}>Com apenas alguns cliques, inicie a recarga, efetue o pagamento e desconecte o plugue.</h1>
-                        <button className={styles.botao}>Baixe já o App!</button>
+        <div>
+            <div className={styles.labelsecun}>
+                <h2>Nosso App</h2>
+            </div>
+            <div className={styles.labelum}>
+                <h1>Simples, Prático e Fácil.</h1>
+            </div>
+            <div className={styles.container}>
+                <div className={styles.esquerda}>
+                    <h1 className={styles.h1prin}>Encontre postos de carregamento ELETRIX próximos rapidamente!</h1>
+                    <div className={styles.imageContainer}>
+                        <img src={Iphonedois} alt="Iphone" className={styles.Iphonedois} />
                     </div>
-                    <div className={styles.iphonefim}>
-                        <img src={IphoneRight} alt="Divisor" className={styles.IphoneRight}/>
-                    </div>
+                    <h1 className={styles.h1secun}>Com apenas <span className={styles.highlight}>alguns cliques</span>, inicie a recarga, efetue o pagamento e desconecte o plugue.</h1>
+                    <button>Baixe já o App!</button>
+                </div>
+                <div className={styles.direita}>
+                    <div className={styles.Imgdois}><img src={Iphoneum} alt="Iphone" className={styles.Iphoneum} /></div>
+                    <div className={styles.Imgtres}><img src={Iphonetres} alt="Iphone" className={styles.Iphonetres} /></div>
                 </div>
             </div>
         </div>
     );
-};
+}
 
 export default NossoApp;
