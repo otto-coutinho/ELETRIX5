@@ -6,6 +6,13 @@ import Iphonetres from "../../assets/iPhonetres.svg";
 import Divisor from "../../assets/divisor.svg";
 
 function NossoApp() {
+    const scrollToElement = (elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div>
             <div className={styles.labelsecun}>
@@ -21,7 +28,7 @@ function NossoApp() {
                         <img src={Iphonedois} alt="Iphone" className={styles.Iphonedois} />
                     </div>
                     <h1 className={styles.h1secun}>Com apenas <span className={styles.highlight}>alguns cliques</span>, inicie a recarga, efetue o pagamento e desconecte o plugue.</h1>
-                    <button>Baixe já o App!</button>
+                    <button onClick={() => scrollToElement('nosso-app')}>Baixe já o App!</button>
                 </div>
                 <div className={styles.direita}>
                     <div className={styles.Imgdois}><img src={Iphoneum} alt="Iphone" className={styles.Iphoneum} /></div>

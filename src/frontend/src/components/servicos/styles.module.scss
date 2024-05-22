@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
 .servicos {
     display: flex;
     flex-wrap: wrap;
@@ -6,6 +8,7 @@
     gap: 1rem;
     margin-top: 2rem;
     align-items: center;
+    font-family: 'Work Sans', sans-serif; 
 }
 
 .carousel {
@@ -52,17 +55,31 @@
     align-items: flex-start;
     width: 35rem;
 
+
     p {
         margin: 5rem 0;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 30px;
+        color: #00ADD3;
     }
 }
 
 .button {
     background-color: #00ADD3;
-    padding: 1rem;
+    color: #001339;
+    font-weight: 900;
+    padding: 1.4rem 1.6em;
     border: none;
-    border-radius: 2rem;
-    font-weight: 500;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: large;
 
     &:hover {
         background-color: #00A3C3;

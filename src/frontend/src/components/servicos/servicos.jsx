@@ -11,13 +11,14 @@ function Servicos() {
   return (
     <div className={styles.servicos}>
       <div className={styles.title}>
-        <h1>Serviços</h1>
+        <h1>Soluções</h1>
       </div>
       <div className={styles.session}>
         <div className={styles.content}>
-            <h1>INSTALAÇÃO DE CARREGADORES PRIVADOS</h1>
+            <h1>EletrixHome</h1>
+            <h2>Instalação de carregadores</h2>
             <p>
-            Além de oferecer carregadores de alta qualidade, garantimos a instalação segura dos equipamentos em sua residência, incluindo dispositivos de outras marcas.
+            EletrixHome oferece instalação profissional e segura de carregadores de carros elétricos. Escolha adquirir o equipamento conosco ou utilizar um de sua preferência, garantindo uma integração segura e eficiente com a infraestrutura elétrica existente em sua propriedade.
             </p>
             <button className={styles.button}>Realizar cotação de serviço</button>
         </div>
@@ -50,18 +51,20 @@ function Servicos() {
     </Swiper>
         </div>
         <div className={styles.content}>
-            <h1>INFRAESTRUTURA SECA</h1>
+            <h1>EletrixInfra</h1>
+            <h2>Instalação de fraestrutura seca</h2>
             <p>
-            Oferecemos a implementação de infraestrutura seca aonde preparamos o local para o recebimento futuro de carregadores para veículos elétricos. Com nossa solução, você pode equipar qualquer espaço, garantindo prontidão e adaptabilidade para as necessidades de amanhã.
+            EletrixInfra oferece serviços essenciais para locais que preveem a crescente adoção de veículos elétricos. Desenvolvemos a infraestrutura elétrica necessária, evitando altos custos futuros em instalações e facilitando significativamente esses processos. Com EletrixInfra, seu ambiente estará pronto para instalar carregadores em diversas vagas, acompanhando de forma eficiente esta tendência ascendente no mercado de veículos elétricos.
             </p>
             <button className={styles.button}>Realizar cotação de serviço</button>
         </div>
       </div>
       <div className={styles.session}>
         <div className={styles.content}>
-            <h1>CARREGADORES TARIFADOS</h1>
+            <h1>EletrixHub</h1>
+            <h2>Carregadores tarifados</h2>
             <p>
-            Nossos carregadores tarifados são perfeitos para qualquer estacionamento aberto ao público. Após uma análise elétrica e aprovação do orçamento, realizamos a instalação do carregador por nossa conta, incluindo o fornecimento do equipamento. Além disso, cobrimos os custos de energia consumida e repassamos 10% do lucro das recargas feitas através do APP ao estabelecimento, valorizando seu espaço e sem nenhum investimento de sua parte.
+            O EletrixHub especializa-se na instalação e gestão de carregadores públicos tarifados, interligados ao nosso aplicativo. Projetado para espaços abertos ao público, nosso serviço inclui fornecimento de carregadores e compensação mensal dos custos de energia ao estabelecimento, com opções personalizadas para atender às diversas necessidades de gestão e tarifação.
             </p>
             <button className={styles.button}>Realizar cotação de serviço</button>
         </div>

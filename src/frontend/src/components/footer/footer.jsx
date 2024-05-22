@@ -11,6 +11,14 @@ import retangulo from "../../assets/Rectangle.svg";
 import Logo from "../../assets/logo-icon.svg";
 
 function Footer() {
+    const redirectToPlayStore = () => {
+        window.location.href = "https://play.google.com/store/apps/details?id=com.coderbox.eletrix&hl=pt_BR&gl=US";
+    };
+
+    const redirectToAppStore = () => {
+        window.location.href = "https://apps.apple.com/br/app/eletrix/id6444454547";
+    }
+    
     return(
         <div>
             <div className={styles.container}>
@@ -56,9 +64,9 @@ function Footer() {
                 </div>
                 <div className={styles.app}>
                     <h1>BAIXE O APP ELETRIX</h1>
-                    <div className={styles.imagesapp}>
-                        <img src={PlayStore} alt="PlayStore" className={styles.playlogo}/>
-                        <img src={AppStore} alt="AppStore" className={styles.applogo} />
+                    <div id="nosso-app" className={styles.imagesapp}>
+                        <button className={styles.botaoplay} onClick={redirectToPlayStore}><img src={PlayStore} alt="PlayStore" className={styles.playlogo}/></button>
+                        <button className={styles.botaoapp} onClick={redirectToAppStore}><img src={AppStore} alt="AppStore" className={styles.applogo} /></button>
                     </div>
                 </div>
             </div>

@@ -30,14 +30,15 @@
             }
 
             button {
-                width: 100%;
-                padding: 10px;
-                margin: 10px;
-                border-radius: 5rem;
                 background-color: #00ADD3;
-                color: white;
-                font-weight: 600;
+                color: #001339;
+                font-weight: 900;
+                padding: 0.8rem 0.6em;
+                border: none;
+                border-radius: 1.8rem;
                 cursor: pointer;
+                font-weight: 600;
+                font-size: large;
             }
 
             button:hover {
