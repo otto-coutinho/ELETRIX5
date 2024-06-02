@@ -20,10 +20,18 @@
     margin-bottom: 20px;
 }
 
-.botaoplay, .botaoapp{
+.botaoplay, .botaoapp {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+.social {
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }   
 }
 
 .eletrix .social {

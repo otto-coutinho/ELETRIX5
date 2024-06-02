@@ -29,6 +29,14 @@ function Footer() {
     const handleWhatsAppClick = () => {
         window.open("https://wa.me/5511919552120", "_blank");
     };
+
+    const instagram = () => {
+        window.open("https://www.instagram.com/eletrix.mobi?igsh=MTdpd3V6OWY0d2lyaA==", "_blank");
+    }
+
+    const linkedln = () => {
+        window.open("https://www.linkedin.com/company/eletrix-mobility-solutions/", "_blank");
+    }
     
     return(
         <div className={styles.tudao}>
@@ -39,8 +47,8 @@ function Footer() {
                     <div className={styles.social}>
                         <p>Siga a ELETRIX</p>
                         <img src={retangulo} alt="retangulo" />
-                        <img src={Instagram} alt="Instagram" />
-                        <img src={Linkedlin} alt="Linkedlin" />
+                        <button onClick={instagram}><img src={Instagram} alt="Instagram" /></button>
+                        <button onClick={linkedln}><img src={Linkedlin} alt="Linkedlin" /></button>
                     </div>                
                 </div>
                 <div className={styles.navegue}>
