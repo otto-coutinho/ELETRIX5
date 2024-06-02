@@ -18,9 +18,20 @@ function Footer() {
     const redirectToAppStore = () => {
         window.location.href = "https://apps.apple.com/br/app/eletrix/id6444454547";
     }
+
+    const scrollToElement = (elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    const handleWhatsAppClick = () => {
+        window.open("https://wa.me/5511919552120", "_blank");
+    };
     
     return(
-        <div>
+        <div className={styles.tudao}>
             <div className={styles.container}>
                 <div className={styles.eletrix}>
                     <img src={eletrix} alt="eletrix" className={styles.eletrixLogo} />
@@ -47,7 +58,7 @@ function Footer() {
                 <div className={styles.contato}>
                     <h1>CONTATO</h1>
                     <div className={styles.WhatsApp}>
-                        <img src={WhatsApp} alt="WhatsApp" className={styles.whatslogo} />
+                        <img onClick={handleWhatsAppClick} src={WhatsApp} alt="WhatsApp" className={styles.whatslogo} />
                         <div>
                             <p>WhatsApp:</p>
                             <p>011-3222-4721</p>
@@ -77,7 +88,7 @@ function Footer() {
                     <p>Termos de uso</p>
                 </div>
                 <p className={styles.reservados}>© Todos os direitos reservados à Eletrix</p>
-                <img src={Logo} alt="Logo" className={styles.logo} />
+                <img onClick={() => scrollToElement('home')} src={Logo} alt="Logo" className={styles.logo} />
             </div>
         </div>
     )

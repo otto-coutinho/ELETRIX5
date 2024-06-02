@@ -12,7 +12,6 @@ import Produtos from "../../components/produtos/produtos";
 import Servicos from "../../components/servicos/servicos";
 import Formulario from "../../components/sugerir/sugerir";
 import Vantagens from "../../components/vantagens/vantagens";
-import Parceiros from "../../components/parceiros/parceiros";
 import Perguntas from "../../components/perguntas/perguntas";
 import Contato from "../../components/contato/contato";
 import Footer from "../../components/footer/footer";
@@ -27,6 +26,7 @@ function Home () {
             <a href="https://wa.me/5511919552120" className={styles.whatsapp} target="_blank"><img src={WhatsApp} alt="WhatsApp" /></a>
             <Navbar></Navbar>
             <Banner></Banner>
+            <Divider></Divider>
             <Valores></Valores>
             <Divider></Divider>
             <Produtos></Produtos>
@@ -35,8 +35,6 @@ function Home () {
             <Formulario></Formulario>
             <Divider></Divider>
             <Vantagens></Vantagens>
-            <Divider></Divider>
-            <Parceiros></Parceiros>
             <Divider></Divider>
             <Perguntas></Perguntas>
             <Divider></Divider>

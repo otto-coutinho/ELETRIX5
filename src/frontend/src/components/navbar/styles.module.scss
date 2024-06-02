@@ -12,7 +12,9 @@
 }
 
 .logo {
-    width: 7%;
+    width: 121px;
+    height: 67.01px;
+    cursor: pointer;
 }
 
 .links {
@@ -31,15 +33,57 @@
     }
 
     .appButton {
-        background-color: #00ADD3;
-        color: white;
-        padding: 0.8rem 1.2rem;
+        background: none;
         border: none;
-        border-radius: 1.8rem;
         cursor: pointer;
-        font-size: 1rem;
-        color:rgb(20, 20, 53);
-        font-weight: 600;
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+
+    span {
+        height: 0.25rem;
+        width: 1.5rem;
+        background-color: white;
+        margin-bottom: 0.3rem;
+        border-radius: 0.1rem;
+    }
+}
+
+@media (max-width: 740px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        width: 85px;
+        height: 45px;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        background-color: rgba(0,0,0,.8);
+        width: 100%;
+        text-align: center;
+
+        a {
+            padding: 1rem 0;
+        }
+    }
+
+    .links.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
     }
 }
 
@@ -49,11 +93,4 @@
 
 .scrolled {
     background-color: rgba(16, 23, 31, 0.8);
-}
-
-@media (max-width: 740px) {
-    .container {
-        width: 100%;
-
-    }
 }

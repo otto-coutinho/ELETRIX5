@@ -7,6 +7,12 @@
     color: #fff;
 }
 
+.tudao{
+    img{
+        cursor: pointer;
+    }
+}
+
 .eletrix,
 .container2,
 .app {
@@ -198,5 +204,11 @@
     }
     .politicas {
         display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .navegue{
+        padding-right: 0px;
     }
 }

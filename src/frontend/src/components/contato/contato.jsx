@@ -5,8 +5,11 @@ import styles from "./styles.module.scss";
 import WhatsApp from "../../assets/WhatsApp.svg";
 
 function Contato() {
+    const handleWhatsAppClick = () => {
+        window.open("https://wa.me/5511919552120", "_blank");
+    };
     return(
-        <div className={styles.container}>
+        <div id="contato" className={styles.container}>
             <div className={styles.title}>
                 <h1>ENTRE EM CONTATO</h1>
             </div>
@@ -17,7 +20,7 @@ function Contato() {
                 </div>
                 <div className={styles.contact}>
                     <p>Fale com um especialista</p>
-                    <button>
+                    <button onClick={handleWhatsAppClick}>
                         <img src={WhatsApp} alt="" />
                         <p>Agendar avaliação</p>
                     </button>

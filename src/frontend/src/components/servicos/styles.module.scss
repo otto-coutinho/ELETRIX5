@@ -8,7 +8,7 @@
     gap: 1rem;
     margin-top: 2rem;
     align-items: center;
-    font-family: 'Work Sans', sans-serif; 
+    font-family: 'Work Sans', sans-serif;
 }
 
 .carousel {
@@ -53,19 +53,19 @@
     gap: 1rem;
     margin: 2rem;
     align-items: flex-start;
-    width: 35rem;
-
+    width: 55rem;
 
     p {
         margin: 5rem 0;
+        font-size: 1.3rem;
     }
 
     h1 {
-        font-size: 52px;
+        font-size: 3.25rem;
     }
 
     h2 {
-        font-size: 30px;
+        font-size: 1.87rem;
         color: #00ADD3;
     }
 }
@@ -87,36 +87,110 @@
     }
 }
 
-@media (max-width: 740px) {
+/* Estilização das setas de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #00ADD3; /* Cor das setas de navegação */
+    font-size: 24px; /* Tamanho do ícone das setas */
+    width: 40px; /* Largura das setas */
+    height: 40px; /* Altura das setas */
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo das setas */
+    border-radius: 50%; /* Formato circular das setas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Certifique-se de que as setas apareçam sobre os slides */
+    cursor: pointer; /* Cursor ao passar por cima das setas */
+    transition: background-color 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+/* Estilização da seta à esquerda */
+.swiper-button-prev {
+    left: 10px; /* Posição à esquerda */
+}
+
+/* Estilização da seta à direita */
+.swiper-button-next {
+    right: 10px; /* Posição à direita */
+}
+
+/* Efeito de hover nas setas */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Cor de fundo alterada no hover */
+}
+
+  
+  
+@media (max-width: 1000px) {
     .servicos {
-        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 100%;
+        text-align: center;
+        padding-right: 65px;
     }
 
     .title {
         display: flex;
+        justify-content: center;
         align-items: center;
+        width: 100%;
+        padding-left: 50px;
+
+        h1 {
+            text-align: center;
+        }
+    }
+    .carousel {
+        margin-top: 0.5rem;
+    }
+
+    .content p {
+        margin: 2rem;
     }
 
     .session {
         width: 100%;
+        text-align: center;
+        flex-direction: column; /* Mudar para uma direção de coluna */
+        align-items: center;
     }
 
     .content {
+        align-items: center;
+        width: 100%;
+        text-align: center;
 
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-        
-        h1 {
-            font-size: 1.2rem;
+        h1, h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
         }
     }
 
     .swiper_two {
         display: none;
     }
+}
+
+
+/* Estilização das setas de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #00ADD3; // Cor das setas de navegação
+}
+
+.swiper-button-prev {
+    left: 0; // Posição à esquerda
+}
+
+.swiper-button-next {
+    right: 0; // Posição à direita
 }

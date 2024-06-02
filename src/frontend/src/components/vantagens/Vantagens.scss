@@ -1,10 +1,13 @@
 .vantagens {
-    text-align: center;
     margin: 2rem 0;
+
+    h1 {
+        font-size: 2.1rem;
+        color: #00ADD3;
+    }
     
     h2 {
         color: #00ADD3;
-        font-weight: 300;
     }
 
     p {
@@ -16,45 +19,156 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin: 3rem 0;
+        margin-top: 3rem;
         gap: 2rem;
 
-        .box {
-            margin: 10px;
-            padding: 20px;
-            border: 1px solid blue;
-            background-color: white;
-            border-radius: 10px;
-            max-width: 300px;
+        p {
+            color: white;
+            font-size: 1.37rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
         }
     }
 }
 
-@media (max-width: 600px) {
-    .vantagens .boxes {
-        flex-direction: column;
-        align-items: center;
+.fidelizacao, .retornofinanceiro, .imagemecologica, .destaque {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.boxe1, .boxe2 {
+    width: 35%;
+    padding-left: 50px;
+}
+
+.titleprin {
+    text-align: center;
+
+    h1 {
+        font-weight: 300;
+    }
+}
+
+.parceiroh2 {
+    h2 {
+        font-size: 2rem;
+        padding-left: 320px;
+        padding-top: 2rem;
     }
 }
 
 .content {
     display: flex;
-    justify-content: center;
-    align-items: first baseline;
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
     flex-direction: column;
-    margin: 0 6rem;
-    max-width: 50rem;
     text-align: start;
-
-    h2 {
-        color: #00ADD3;
-        font-weight: 300;
-        margin-top: 2rem;
-    }
+    padding-top: 2rem;
 
     p {
-        font-weight: 200;
-        margin-bottom: 2rem;
+        font-size: 1.6rem;
         color: white;
+        padding-left: 320px;
+        padding-right: 320px;
+    }
+}
+
+.parceiros {
+    margin-top: 150px;
+    width: 100%;
+    max-width: 1223px;
+    height: auto;
+    max-height: 271px;
+    display: flex;
+    justify-content: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1148px) {
+    .parceiroh2 {
+        text-align: center;
+
+        h2 {
+            padding-left: 0;
+        }
+    }
+
+    .content {
+        text-align: center;
+
+        p {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
+
+@media (max-width: 1416px) {
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxe1, .boxe2 {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flex {
+        gap: 0.3rem;
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .fidelizacao, .retornofinanceiro, .imagemecologica, .destaque {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .parceiros {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxe1, .boxe2 {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fidelizacao, .retornofinanceiro, .imagemecologica, .destaque {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .parceiros {
+        margin-top: 0px;
     }
 }

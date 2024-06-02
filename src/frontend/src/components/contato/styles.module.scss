@@ -10,12 +10,20 @@
         font-weight: 300;
         color: #00ADD3;
     }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 20px;
+    }
 }
 
 .content {
     display: flex;
     flex-direction: row;
-    gap: 3rem;
+    gap: 30rem;
     justify-content: center;
     align-items: center;
     margin: 5rem 0;
@@ -54,5 +62,23 @@
             margin: 1rem 1rem;
             color: white;
         }
+    }
+}
+
+@media (max-width: 1608px) {
+    .content {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 3rem;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }

@@ -1,9 +1,10 @@
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    justify-content: center;
     margin: 3rem;
+    overflow: hidden;
 }
 
 .title {
@@ -13,14 +14,21 @@
 
     h1 {
         font-weight: 200;
-        color: #00ADD3;
+        color: #00A3C3;
     }
 }
 
 .boxes {
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    width: 100%;
+
+    .swip {
+        width: 100%;
+        max-width: 70rem; /* Ensure this matches your box width */
+        position: relative;
+    }
 
     .swiper-slide {
         display: flex;
@@ -34,28 +42,56 @@
     }
 }
 
-.box {
+.box, .box2 {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: start;
-    width: 70rem;
+    width: 100%;
+    max-width: 70rem;
     margin-bottom: 4rem;
+    padding-left: 39px;
+    padding-right: 39px;
+}
 
-    h3 {
-        background-color: #00ADD3;
-        padding: 0.2rem 0.4rem;
-        color: black;
-        font-weight: 200;
-        border-top-left-radius: 0.5rem;
-        border-top-right-radius: 0.5rem;
-        margin-left: 2rem;
-        max-width: fit-content;
-        font-size: medium;
-    }
+.box h3, .box2 h3 {
+    padding: 0.6rem 0rem;
+    color: white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    max-width: fit-content;
+    font-size: 1.5rem;
+}
+
+.box h2, .box2 h2 {
+    background-color: #C5C5C5;
+    padding: 0.5rem;
+    color: black;
+    font-weight: 500;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.box p, .box2 p {
+    background-color: #D7E8ED;
+    padding: 1rem 0.5rem;
+    color: black;
+    font-weight: 200;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.label {
+    display: flex;
+    background-color: #C5C5C5;
+    padding: 0.5rem;
+    color: black;
+    font-weight: 200;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
 
     h2 {
-        background-color: #00ADD3;
+        background-color: #C5C5C5;
         padding: 0.5rem;
         color: black;
         font-weight: 500;
@@ -64,11 +100,129 @@
     }
 
     p {
-        background-color: white;
-        padding: 1rem 0.5rem;
-        color: black;
-        font-weight: 200;
-        border-bottom-left-radius: 0.5rem;
-        border-bottom-right-radius: 0.5rem;
+        background-color: #C5C5C5;
+        padding: 0.5rem;
+        color: #00A3C3;
+        font-weight: 700;
+        font-size: 1.9rem;
+        margin-left: auto;
+    }
+}
+
+/* Estilização das setas de navegação */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #00ADD3; /* Cor das setas de navegação */
+    font-size: 24px; /* Tamanho do ícone das setas */
+    width: 40px; /* Largura das setas */
+    height: 40px; /* Altura das setas */
+    background-color: rgba(0, 0, 0, 0.1); /* Cor de fundo das setas */
+    border-radius: 50%; /* Formato circular das setas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10; /* Certifique-se de que as setas apareçam sobre os slides */
+    cursor: pointer; /* Cursor ao passar por cima das setas */
+    transition: background-color 0.3s ease; /* Efeito de transição suave ao passar o mouse */
+}
+
+/* Estilização da seta à esquerda */
+.swiper-button-prev {
+    left: -50px; /* Posição à esquerda, fora do componente */
+}
+
+/* Estilização da seta à direita */
+.swiper-button-next {
+    right: -50px; /* Posição à direita, fora do componente */
+}
+
+/* Efeito de hover nas setas */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Cor de fundo alterada no hover */
+}
+
+.butao {
+    background-color: #00ADD3;
+    color: #001339;
+    font-weight: 600;
+    padding: 1rem 3rem; /* Aumentar a largura nas laterais */
+    border: none;
+    border-radius: 1.8rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.input1, .input2 {
+    text-align: start;
+    
+    input {
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+        margin-left: 0px;
+        border: 1px solid #ccc;
+        border-radius: 15px;
+        background-color: #F9EAE5;
+    }
+}
+
+.input2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Garantir que ocupe 100% da largura do pai */
+
+    input {
+        flex: 1; /* Permitir que o input ocupe todo o espaço disponível */
+        margin-right: 10px; /* Espaço entre o input e o botão */
+    }
+
+}
+
+.pai {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto; /* Centralizar horizontalmente */
+
+    h1 {
+        color: #00ADD3;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 1300px) {
+    .pai {
+        flex-direction: column;
+        width: 90%; /* Ajustar a largura para caber melhor em telas menores */
+
+        h1 {
+            padding-bottom: 10px;
+        }
+    }
+
+    .input2 {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        input {
+            margin-bottom: 10px;
+            margin-right: 0; /* Remover margem direita no input */
+        }
+
+        .butao {
+            width: 100%; /* Fazer o botão ocupar toda a largura */
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .butao {
+        padding: 1rem; /* Ajustar padding para telas menores */
     }
 }

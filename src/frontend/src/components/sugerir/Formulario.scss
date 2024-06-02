@@ -1,19 +1,32 @@
 .formulario {
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
+    padding-left: 300px;
+
+    h1 {
+        font-size: 2rem;    
+        color: #00ADD3;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
 
     .input-group {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
+    
         input {
-            width: 100%;
+            width: calc(50% - 20px); /* Largura de 50% menos as margens */
             padding: 10px;
             margin: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 15px; /* Adicionar border-radius de 15px */
         }
 
         .column {
@@ -22,18 +35,21 @@
             margin: 10px;
 
             input {
-                width: 100%;
-            padding: 10px;
+            width: 100%;
+            padding: 20px;
             margin: 10px;
             border: 1px solid #ccc;
-            border-radius: 5px;
+            border-radius: 15px;
+            width: calc(100% - 20px);
+            background-color: #F9EAE5;
+            width: 100%;
             }
 
             button {
                 background-color: #00ADD3;
                 color: #001339;
                 font-weight: 900;
-                padding: 0.8rem 0.6em;
+                padding: 0.8rem 0.2rem;
                 border: none;
                 border-radius: 1.8rem;
                 cursor: pointer;
@@ -56,12 +72,47 @@
     }
 }
 
+.inputzao {
+    width: calc(100% - 20px); /* Largura total menos as margens */
+    padding: 100px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 30%;
+}
+
 @media (max-width: 600px) {
     .formulario .input-group {
         flex-direction: column;
     }
 
+    .formulario .input-group .column {
+        margin: 0px;
+    }
+
     .formulario {
         margin-top: 2rem;
     }
+
 }
+
+@media (max-width: 990px){
+    .input-group {
+        button {
+            padding: 0.8rem 0.2rem;
+        }
+    }
+}
+@media (max-width: 1114px) {
+    .formulario {
+        align-items: center; /* Centralizar itens */
+        padding-left: 0; /* Definir padding-left como 0px */
+    }
+
+    h1 {
+        text-align: center; /* Centralizar texto */
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
