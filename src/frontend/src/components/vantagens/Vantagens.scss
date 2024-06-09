@@ -60,7 +60,7 @@
     h2 {
         font-size: 2rem;
         padding-left: 320px;
-        padding-top: 2rem;
+        padding-top: 8rem;
     }
 }
 
@@ -92,6 +92,11 @@
         width: 100%;
         height: auto;
     }
+
+}
+
+.parceiros-mobile {
+   display: none;
 }
 
 @media (max-width: 1148px) {
@@ -143,14 +148,23 @@
 
 @media (max-width: 600px) {
     .parceiros {
-        max-width: 100%;
-        height: auto;
+       display: none
+    }
+
+    .parceiros-mobile {
+        display: flex;
+        justify-content: center;
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 
     .boxes {
         flex-direction: column;
         align-items: center;
     }
+
 
     .boxe1, .boxe2 {
         width: 100%;
@@ -164,11 +178,16 @@
     .fidelizacao, .retornofinanceiro, .imagemecologica, .destaque {
         align-items: center;
         text-align: center;
+
+        p {
+            margin: 2rem 1rem;
+        }
     }
 }
 
 @media (max-width: 800px) {
     .parceiros {
-        margin-top: 0px;
+        display: none;
     }
+
 }

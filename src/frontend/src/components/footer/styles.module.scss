@@ -87,7 +87,6 @@
 .whatslogo {
     width: 30px;
     height: 30px;
-
 }
 
 .emaillogo {
@@ -103,6 +102,7 @@
 
 .navegue {
     padding-right: 150px;
+    text-align: center;
 }
 
 .navegue ul {
@@ -156,7 +156,6 @@
 .applogo{
     width: 200px;
     height: 60px;
-
 }
 
 .app img {
@@ -185,38 +184,61 @@
     padding-right: 200px;
 }
 
+.igln {
+    gap: 10px;
+    display: flex;
+}
+
 @media (max-width: 768px) {
     .eletrix,
     .container2,
-    .app {
+    .app, .navegue, .contato {
         flex-basis: 100%;
         gap: 0px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contato {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
         padding-bottom: 20px;
     }
-    .contato {
-        padding-top: 40px;
+
+    .WhatsApp, .Email {
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        justify-content: center;
+    }
+
+    .WhatsApp img, .Email img {
+        margin: 0;
+    }
+
+    .igln {
+        padding-top: 50px;
     }
 
     .navegue {
         align-items: center;
-        text-align: center;
         justify-content: center;
-        padding-left: 50px;
+        text-align: center;
     }
-    .contato img {
-        margin-right: 10px;
-        margin-bottom: 50px;
-    }
+
     .politicas {
         display: none;
     }
-    .logo{
+    
+    .logo {
         display: none;
     }
-    .navegue{
+
+    .navegue {
         padding-right: 0px;
     }
 }

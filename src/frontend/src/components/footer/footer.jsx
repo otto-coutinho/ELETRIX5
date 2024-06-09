@@ -45,29 +45,31 @@ function Footer() {
                     <img src={eletrix} alt="eletrix" className={styles.eletrixLogo} />
                     <p>Carregando seu futuro</p>
                     <div className={styles.social}>
-                        <p>Siga a ELETRIX</p>
+                        <div>
+                            <p>Siga a ELETRIX</p>
+                        </div>
                         <img src={retangulo} alt="retangulo" />
-                        <button onClick={instagram}><img src={Instagram} alt="Instagram" /></button>
-                        <button onClick={linkedln}><img src={Linkedlin} alt="Linkedlin" /></button>
+                        <div className={styles.igln}>
+                            <button onClick={instagram}><img src={Instagram} alt="Instagram" /></button>
+                            <button onClick={linkedln}><img src={Linkedlin} alt="Linkedlin" /></button>
+                        </div>
                     </div>                
                 </div>
                 <div className={styles.navegue}>
                         <h1>NAVEGUE</h1>
                         <ul>
-                            <li>Home</li>
-                            <li>Serviços</li>
-                            <li>Parceiros</li>
-                            <li>Produtos</li>
-                            <li>App</li>
-                            <li>Sobre</li>
-                            <li>Links</li>
+                            <li onClick={() => scrollToElement('home')}>Home</li>
+                            <li onClick={() => scrollToElement('solucoes')} >Soluções</li>
+                            <li onClick={() => scrollToElement('home')}>Parceiros</li>
+                            <li onClick={() => scrollToElement('produto')}>Produtos</li>
+                            <li onClick={() => scrollToElement('app')}>App</li>
                         </ul>
                 </div>
                 <div className={styles.contato}>
                     <h1>CONTATO</h1>
                     <div className={styles.WhatsApp}>
                         <img onClick={handleWhatsAppClick} src={WhatsApp} alt="WhatsApp" className={styles.whatslogo} />
-                        <div>
+                        <div className={styles.whats}>
                             <p>WhatsApp:</p>
                             <p>011-3222-4721</p>
                             <p>011-99976-7781</p>
@@ -75,7 +77,7 @@ function Footer() {
                     </div>
                     <div className={styles.Email}>
                         <img src={Email} alt="Email" className={styles.emaillogo} />
-                        <div>
+                        <div className={styles.email}>
                             <p>E-mail:</p>
                             <p>contato@eletrix5.com.br</p>
                         </div>

@@ -7,13 +7,18 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import Imagem_um from "../../assets/image-1.svg";
 
+// Animation library
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function Servicos() {
     const handleWhatsAppClick = () => {
         window.open("https://wa.me/5511919552120", "_blank");
     };
-
+    
+    AOS.init();
     return (
-        <div id="solucoes" className={styles.servicos}>
+        <div data-aos="fade-up" id="solucoes" className={styles.servicos}>
             <div className={styles.title}>
                 <h1>Soluções</h1>
             </div>
@@ -60,7 +65,7 @@ function Servicos() {
                         <SwiperSlide><img src={Imagem_um} alt="" /></SwiperSlide>
                     </Swiper>
                 </div>
-                <div className={styles.content}>
+                <div className={styles.content1}>
                     <h1 className={styles.titleservices}>EletrixInfra</h1>
                     <h2>Instalação de fraestrutura seca</h2>
                     <p>

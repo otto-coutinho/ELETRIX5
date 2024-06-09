@@ -70,6 +70,35 @@
     }
 }
 
+.content1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem;
+    align-items: flex-end;
+    width: 55rem;
+    text-align: end;
+
+    p {
+        margin: 5rem 0;
+        font-size: 1.3rem;
+    }
+
+    h1 {
+        font-size: 3.25rem;
+    }
+
+    h2 {
+        font-size: 1.87rem;
+        color: #00ADD3;
+    }
+}
+
+
+
+
+
 .button {
     background-color: #00ADD3;
     color: #001339;
@@ -161,7 +190,7 @@
         align-items: center;
     }
 
-    .content {
+    .content, .content1 {
         align-items: center;
         width: 100%;
         text-align: center;
@@ -179,6 +208,18 @@
         display: none;
     }
 }
+
+
+@media (max-width: 1001px) {
+    .session .content {
+        order: 1;
+    }
+    .session .carousel {
+        order: 2;
+    }
+}
+
+
 
 
 /* Estilização das setas de navegação */

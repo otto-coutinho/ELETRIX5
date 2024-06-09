@@ -16,6 +16,7 @@ import Perguntas from "../../components/perguntas/perguntas";
 import Contato from "../../components/contato/contato";
 import Footer from "../../components/footer/footer";
 import NossoApp from "../../components/nosso-app/app";
+// import BannerMobile from "../../components/banner-mobile/mobile-banner"
 
 // Divider
 import Divider from "../../components/divider/divider";
@@ -25,7 +26,8 @@ function Home () {
         <div className={styles.global}>
             <a href="https://wa.me/5511919552120" className={styles.whatsapp} target="_blank"><img src={WhatsApp} alt="WhatsApp" /></a>
             <Navbar></Navbar>
-            <Banner></Banner>
+            <Banner className={styles.banner_desktop}></Banner>
+            {/* <BannerMobile className={styles.banner_mobile}></BannerMobile> */}
             <Divider></Divider>
             <Valores></Valores>
             <Divider></Divider>

@@ -88,10 +88,23 @@
 
     .formulario .input-group .column {
         margin: 0px;
+
+        button {
+            padding: 0.8rem 1rem;
+        }
     }
 
     .formulario {
         margin-top: 2rem;
+
+        .column {
+
+            button {
+                padding: 0.8rem 0.5rem;
+            }
+
+        }
+
     }
 
 }
@@ -107,6 +120,14 @@
     .formulario {
         align-items: center; /* Centralizar itens */
         padding-left: 0; /* Definir padding-left como 0px */
+
+        .column {
+
+            button {
+                padding: 0.8rem 0.5rem;
+            }
+
+        }
     }
 
     h1 {

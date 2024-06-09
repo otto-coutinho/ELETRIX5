@@ -19,6 +19,10 @@ function Navbar() {
         setMenuOpen(!menuOpen);
     };
 
+    const closeMenu = () => {
+        setMenuOpen(false);
+    };
+
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         return () => {
@@ -30,6 +34,7 @@ function Navbar() {
         const element = document.getElementById(elementId);
         if (element) {
             element.scrollIntoView({ behavior: "smooth" });
+            closeMenu(); // Close the menu after clicking a link
         }
     };
 
@@ -38,12 +43,18 @@ function Navbar() {
             <img onClick={() => scrollToElement('home')} className={styles.logo} src={Logo} alt="Logo" />
             <div className={`${styles.links} ${menuOpen ? styles.show : ""}`}>
                 <a onClick={() => scrollToElement('home')}>Home</a>
-                <a onClick={() => scrollToElement('valores')}>Valores</a>
                 <a onClick={() => scrollToElement('produto')}>Produto</a>
                 <a onClick={() => scrollToElement('solucoes')}>Soluções</a>
                 <a onClick={() => scrollToElement('perguntas')}>Perguntas</a>
                 <a onClick={() => scrollToElement('contato')}>Contato</a>
-                <button className={styles.appButton} type="button" onClick={() => scrollToElement('nosso-app')}><img src={Buttonapp} alt="buttonapp" /></button>
+                <button className={styles.appButton} type="button" onClick={() => scrollToElement('nosso-app')}>
+                    <img src={Buttonapp} alt="buttonapp" />
+                </button>
+                {menuOpen && (
+                    <button className={styles.closeButton} onClick={closeMenu}>
+                        <span className={styles.closeIcon}>X</span>
+                    </button>
+                )}
             </div>
             <div className={styles.hamburger} onClick={toggleMenu}>
                 <span></span>

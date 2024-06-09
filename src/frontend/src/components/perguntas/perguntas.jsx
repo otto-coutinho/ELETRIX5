@@ -3,14 +3,12 @@ import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from './styles.module.scss';
+import Pergunta from '../../assets/pergunta.svg';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
-import Pergunta from '../../assets/pergunta.svg';
-
-
 
 function Perguntas() {
     const [question, setQuestion] = useState('');
@@ -50,9 +48,9 @@ function Perguntas() {
             <div className={styles.boxes}>
                 <div className={styles.swip}>
                     <Swiper
-                        spaceBetween={50}
+                        spaceBetween={20}
                         slidesPerView={1}
-                        navigation={true}
+                        navigation
                         modules={[Navigation]}
                         className={styles.carousel}
                         onSlideChange={() => console.log('slide change')}
@@ -67,32 +65,58 @@ function Perguntas() {
                                 </div>
                             </div>
                         </SwiperSlide>
-                        {/* Repita os SwiperSlide conforme necessário */}
-                    </Swiper>
-                </div>
-                <div className={styles.swip}>
-                    <Swiper
-                        spaceBetween={50}
-                        slidesPerView={1}
-                        navigation={true}
-                        modules={[Navigation]}
-                        className={styles.carousel}
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
-                    >
                         <SwiperSlide>
-                            <div className={styles.box2}>
+                            <div className={styles.box}>
                                 <div>
-                                    <h3>App</h3>
-                                    <div className={styles.label}>
-                                        <h2>Tem como filtrar por pontos de recarga mais próximos de mim?</h2>
-                                        <p>App</p>
-                                    </div>
-                                    <p>Sim! Ao baixar o App, aparecerá um botão escrito “Estações mais próximas”. Basta dar um clique que você filtra os 5 postos de recarga Eletrix mais próximos de você</p>
+                                    <h3>Geral</h3>
+                                    <h2>A ELETRIX apenas vende carregadores?</h2>
+                                    <p>Não, além de vender carregadores de alta qualidade, a ELETRIX oferece instalação, manutenção, e projetos de infraestrutura. Destacamos nosso serviço de instalação de carregadores tarifados com app, ideal para estacionamentos. Descubra todos os nossos serviços!
+                                    </p>
                                 </div>
                             </div>
                         </SwiperSlide>
-                        {/* Repita os SwiperSlide conforme necessário */}
+                        <SwiperSlide>
+                            <div className={styles.box}>
+                                <div>
+                                    <h3>Eletrix Home</h3>
+                                    <h2>A ELETRIX realiza manutenção após a venda?
+                                    </h2>
+                                    <p>Se identificado algum defeito decorrente da instalação ou de fábrica, a empresa se compromete a realizar todos os reparos necessários para garantir o funcionamento do equipamento.</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.box}>
+                                <div>
+                                    <h3>EletrixHub</h3>
+                                    <h2>Quem é responsável pela manutenção e eventuais danos ao carregador?
+                                    </h2>
+                                    <p>A ELETRIX é integralmente responsável pela manutenção e por quaisquer danos relacionados aos carregadores. Nestes casos, a empresa garante a reparação ou substituição do equipamento, assegurando a continuidade e a qualidade do serviço oferecido.</p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.box}>
+                                <div>
+                                    <h3>EletrixHub</h3>
+                                    <h2>Quem arca com o custo da energia utilizada pelo carregador tarifado?
+                                    </h2>
+                                    <p>A ELETRIX assume o custo total da energia consumida pelos carregadores tarifados mensalmente. O consumo é monitorado por um sistema proprietário e repassado à empresa, sem custos adicionais ao local.
+                                    </p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <div className={styles.box}>
+                                <div>
+                                    <h3>Geral</h3>
+                                    <h2>Quero um carregador tarifado ELETRIX no meu estabelecimento. O que devo fazer?
+                                    </h2>
+                                    <p>Basta o seu estabelecimento ser aberto ao público. Assim, avaliamos o local e, se adequado, cuidaremos da instalação do carregador dentro de uma semana após assinatura do contrato, sem custos para o equipamento ou instalação.
+                                    </p>
+                                </div>
+                            </div>
+                        </SwiperSlide>
                     </Swiper>
                 </div>
             </div>
@@ -128,3 +152,4 @@ function Perguntas() {
 }
 
 export default Perguntas;
+    

@@ -51,9 +51,18 @@
 }
 
 @media (max-width: 768px) {
-   .content {
-       padding: 1rem;
-       padding-top: 80px;
+   .container {
+      position: sticky;
+      margin-top: 0;
+   }
+
+   .banner {
+      height: 90vh;
+   }
+
+   .eletriximg {
+      width: 70vw; /* Alterado para porcentagem */
+      margin-bottom: 1rem;
    }
 
    .subtitle {
@@ -65,28 +74,9 @@
        font-size: 0.8rem;
    }
 
-   .banner {
-      padding-top: 70px;
-   }
-
    .labelfim {
-      display: none;
-   }
-
-   .eletriximg {
-       width: 90%; /* Alterado para porcentagem */
-       max-width: 300px; /* Limita a largura máxima */
-   }
-}
-
-@media (max-width: 1100px) {
-   .labelfim {
-      display: none;
-   }
-   .button {
-      margin-top: 0px;
-   }
-   .subtitle {
-      padding-top: 0px;
+      font-size: 1rem;
+      margin-top: 0;
+      padding-top: 0;
    }
 }

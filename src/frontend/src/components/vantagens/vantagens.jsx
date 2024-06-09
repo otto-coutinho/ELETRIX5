@@ -1,7 +1,8 @@
 import React from "react";
 import './Vantagens.scss';
 import rainho from "../../assets/rainho.svg";
-import parceiros from "../../assets/parceiros.svg";
+import parceiros_desktop from "../../assets/parceiros-desktop.svg";
+import parceiros_mobile from "../../assets/parceiros-mobile.svg";
 
 function Vantagens() {
     return (
@@ -49,7 +50,10 @@ function Vantagens() {
                     </div>
                 </div>
                 <div className="parceiros">
-                    <img className="parceiros-img" src={parceiros} alt="parceiros" />
+                    <img className="parceiros-img" src={parceiros_desktop} alt="parceiros" />
+                </div>
+                <div className="parceiros-mobile">
+                    <img className="parceiros-img" src={parceiros_mobile} alt="parceiros" />
                 </div>
             </div>
         </div>

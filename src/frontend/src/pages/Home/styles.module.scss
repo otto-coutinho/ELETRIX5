@@ -46,3 +46,17 @@
         object-fit: cover;
     }
 }
+
+.banner_mobile {
+    display: none
+}
+
+@media (max-width: 600px) {
+    .banner {
+        display: none;
+    }
+
+    .banner_mobile {
+        display: flex;
+    }
+}
